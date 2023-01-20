@@ -16,11 +16,62 @@
   </head>
 
   <body class="body">
-    <div class="page">
-      <p>Тренировки</p>
+    <div class="page theme light">
+      <section class="menu">
+        <button
+          class="menu__button"
+          type="button"
+          name="Menu"
+          aria-label="Кнока меню"
+        ></button>
+        <nav class="menu__navigation">
+          <ul class="menu__links-block">
+            <li class="menu__link-wrapper">
+              <a href="#" class="menu__link theme light"
+                >Покрытия и градиенты</a
+              >
+            </li>
+            <li class="menu__link-wrapper">
+              <a href="#" class="menu__link theme light">Велосипеды</a>
+            </li>
+            <li class="menu__link-wrapper">
+              <a href="#" class="menu__link theme light">Тренировки</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="switch">
+          <button
+            class="switch__button-light theme"
+            type="button"
+            name="Кнопка"
+            aria-label="Кнопка светлой темы"
+          ></button>
+
+          <div class="switch__flag-box">
+            <!-- <img
+              src="./images/images-menu/switch_green.svg"
+              alt="Флажок"
+              class="switch__flag"
+            /> -->
+          </div>
+          <button
+            class="switch__button-dark theme"
+            type="button"
+            name="Кнопка"
+            aria-label="Кнопка тёмной темы"
+          ></button>
+        </div>
+      </section>
+
+      <!--
+
+
+-->
+      <p class="par">Тренировки</p>
     </div>
 
-    <script src="./script.js"></script>
-    <script src="./anton.js"></script>
+    <script src="./JS/index.js"></script>
+    <!-- <script src="./anton.js"></script> -->
   </body>
 </html>
