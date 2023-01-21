@@ -12,7 +12,6 @@
 } */
 
 .menu {
-  /* margin: auto; */
   border: 1px solid red;
   max-width: 100%;
   display: flex;
@@ -22,11 +21,25 @@
 @media screen and (max-width: 760px) {
   .menu {
     border: 2px solid cyan;
-
     flex-direction: column;
-    height: 640px;
     overflow: hidden;
+  }
+}
+
+.menu__subblock {
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .menu__subblock {
+    display: flex;
+    flex-direction: column;
     /* justify-content: space-between; */
+    row-gap: 0px;
+    height: 0px;
+    margin-bottom: 0px;
+    opacity: 0;
+    transition: opacity 1s, row-gap 1.2s, margin-bottom 1s, height 1s;
   }
 }
 
@@ -34,7 +47,7 @@
   border: none;
   width: 22px;
   height: 22px;
-  background: url(../images/images-menu/menu_open.svg) 50% 50% / 22px 22px
+  background: url(../images/images-menu/menu-open-black.svg) 50% 50% / 22px 22px
     no-repeat;
   display: none;
 }
@@ -55,9 +68,10 @@
 @media screen and (max-width: 760px) {
   .menu__navigation {
     margin: 0 auto;
-    margin-bottom: 318px;
+    margin-bottom: 0px;
     overflow: hidden;
     /* height: 0px; */
+    transition: margin-bottom 1s;
   }
 }
 
@@ -115,8 +129,9 @@
   .switch {
     order: 3;
     align-self: center;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     overflow: hidden;
+
     /* height: 0px; */
   }
 }
@@ -127,9 +142,20 @@
   border-radius: 12px;
   display: flex;
   justify-content: start;
-  background: url(../images/images-menu/green.svg) 18% 50%/ 20px 20px no-repeat;
+  background: url(../images/images-menu/switch-green.svg) 15% 50%/ 20px 20px no-repeat;
   background-color: #fff;
+  /* background-position: 15% 50%; */
   transition: background-color 0.3s;
+  animation: green-button_start 0.5s;
+}
+
+@keyframes green-button_start {
+  from {
+    background-position: 85% 50%;
+  }
+  to {
+    background-position: 15% 50%;
+  }
 }
 
 .switch__button-light {
@@ -182,3 +208,38 @@ p {
   margin: 0;
   margin-top: 200px;
 }
+
+.move {
+  animation: green-button 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes green-button {
+  to {
+    background-position: 85% 50%;
+  }
+}
+
+.menu__subblock_open {
+  margin-bottom: 40px;
+  height: 540px;
+  row-gap: 360px;
+  opacity: 1;
+  transition: opacity 1s, row-gap 1s, margin-bottom 1s, height 1s;
+}
+
+/*
+.menu_open {
+  height: 600px;
+  transition: padding-bottom 1s, height 1s;
+} */
+
+/* .switch_open {
+  margin-bottom: 40px;
+  transition: margin-bottom 0.5s;
+} */
+
+/* .menu__navigation_open {
+  margin-bottom: 318px;
+  transition: margin-bottom 1s;
+} */
