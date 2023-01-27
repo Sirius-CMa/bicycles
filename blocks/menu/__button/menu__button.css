@@ -1,0 +1,17 @@
+.menu__button {
+  border: 1px solid red;
+  border: none;
+  width: 22px;
+  height: 22px;
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu__button {
+    display: block;
+    background: url(../../../images/images-menu/menu-open-black.svg) 50% 50% /
+      22px 22px no-repeat;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+  }
+}

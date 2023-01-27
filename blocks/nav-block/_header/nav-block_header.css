@@ -1,0 +1,17 @@
+.nav-block_header {
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 34px;
+}
+@media screen and (max-width: 800px) {
+  .nav-block_header {
+    flex-direction: column;
+    align-content: center;
+    row-gap: 32px;
+    text-align: center;
+  }
+}

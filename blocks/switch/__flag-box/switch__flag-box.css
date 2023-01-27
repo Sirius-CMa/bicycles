@@ -1,0 +1,21 @@
+.switch__flag-box {
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: start;
+  background: url(../../../images/images-menu/switch-green.svg) 15% 50%/ 20px 20px
+    no-repeat;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  animation: green-button_start 0.5s;
+}
+
+@keyframes green-button_start {
+  from {
+    background-position: 85% 50%;
+  }
+  to {
+    background-position: 15% 50%;
+  }
+}

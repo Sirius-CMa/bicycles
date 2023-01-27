@@ -1,0 +1,13 @@
+.menu__navigation {
+  order: 2;
+  margin: 28px 120px 28px auto;
+}
+@media screen and (max-width: 760px) {
+  .menu__navigation {
+    margin: 0 auto;
+    margin-bottom: 0px;
+    overflow: hidden;
+    /* height: 0px; */
+    transition: margin-bottom 1s;
+  }
+}

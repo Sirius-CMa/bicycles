@@ -1,0 +1,10 @@
+.nav-block__link {
+  text-decoration: none;
+  font-style: normal;
+  /* color: #151515; */
+  cursor: pointer;
+}
+
+.nav-block__link:hover {
+  opacity: 0.75;
+}
