@@ -1,0 +1,13 @@
+.nav-block__link_header {
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-block__link_header {
+    /* text-decoration: none; */
+    line-height: 18px;
+    font-size: 18px;
+  }
+}

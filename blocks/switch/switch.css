@@ -1,0 +1,16 @@
+.switch {
+  order: 1;
+  width: 135px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 760px) {
+  .switch {
+    order: 3;
+    align-self: center;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+}

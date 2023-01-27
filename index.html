@@ -26,17 +26,27 @@
         ></button>
         <div class="menu__subblock">
           <nav class="menu__navigation">
-            <ul class="menu__links-block">
-              <li class="menu__link-wrapper">
-                <a href="#" class="menu__link theme light"
+            <ul class="nav-block nav-block_header">
+              <li class="nav-block__wrapper">
+                <a
+                  href="#"
+                  class="nav-block__link nav-block__link_header theme light"
                   >Покрытия и градиенты</a
                 >
               </li>
-              <li class="menu__link-wrapper">
-                <a href="#" class="menu__link theme light">Велосипеды</a>
+              <li class="nav-block__wrapper">
+                <a
+                  href="#"
+                  class="nav-block__link nav-block__link_header theme light"
+                  >Велосипеды</a
+                >
               </li>
-              <li class="menu__link-wrapper">
-                <a href="#" class="menu__link theme light">Тренировки</a>
+              <li class="nav-block__wrapper">
+                <a
+                  href="#"
+                  class="nav-block__link nav-block__link_header theme light"
+                  >Тренировки</a
+                >
               </li>
             </ul>
           </nav>
@@ -93,6 +103,49 @@
           aria-label="Кнопка тёмной темы"
         ></button>
       </div>
+      <footer class="footer theme">
+        <div class="footer__subscribe-block">
+          <h2 class="footer__title">Подпишитесь на рассылку —</h2>
+          <form class="footer__form" action="">
+            <input
+              class="footer__email theme"
+              type="email"
+              id="email"
+              placeholder="Ваш e-mail"
+            />
+          </form>
+        </div>
+        <div class="footer__subblock">
+          <p class="footer__copy-right light">© Road Club 2021</p>
+          <img
+            src="./images/logo/logo__COLOR_main-1.svg"
+            class="footer__logo-image"
+            alt="Логотип"
+          />
+          <div class="switch switch_footer">
+            <button
+              class="switch__button-light theme"
+              type="button"
+              name="Кнопка"
+              aria-label="Кнопка светлой темы"
+            ></button>
+
+            <div class="switch__flag-box">
+              <!-- <img
+            src="./images/images-menu/switch_green.svg"
+            alt="Флажок"
+            class="switch__flag"
+          /> -->
+            </div>
+            <button
+              class="switch__button-dark theme"
+              type="button"
+              name="Кнопка"
+              aria-label="Кнопка тёмной темы"
+            ></button>
+          </div>
+        </div>
+      </footer>
     </div>
 
     <script src="./JS/index.js"></script>
