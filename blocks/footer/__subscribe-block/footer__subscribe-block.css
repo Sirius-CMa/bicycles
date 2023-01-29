@@ -1,0 +1,11 @@
+.footer__subscribe-block {
+  border: 1px solid red;
+  /* grid-area: 1/1/2/2; */
+  margin: 0 120px;
+}
+
+@media screen and (max-width: 760px) {
+  .footer__subscribe-block {
+    margin: 0 18px;
+  }
+}

@@ -1,5 +1,9 @@
-const themes = document.querySelectorAll('.theme')
+const blocks = document.querySelectorAll('.theme')
+let a = []
+
+
 const switchFlagBox = document.querySelector('.switch__flag-box')
+
 
 function initSwitch() {
   const buttons = document.querySelector('.switch')
@@ -8,16 +12,25 @@ function initSwitch() {
   const darkButton = buttons.querySelector('.switch__button-dark')
 
   lightButton.addEventListener('click', (evt) => {
-    themes.forEach(elem => elem.classList.remove('dark'))
+    // themes.forEach(elem => elem.classList.remove('dark1'))
     switchFlagBox.classList.remove('switch__flag-box_dark', 'move')
+    blocks.forEach(el => (
+      a = el.className.split(' '),
+      // a = a[0] + '_dark',
+      el.classList.remove((a[0] + '_dark'))
+    ))
+
   })
 
   darkButton.addEventListener('click', (evt) => {
-    themes.forEach(elem => elem.classList.add('dark'))
+    // themes.forEach(elem => elem.classList.add('dark1'))*/
     switchFlagBox.classList.add('switch__flag-box_dark', 'move')
-
+    blocks.forEach(el => (
+      a = el.className.split(' '),
+      // a = a[0] + '_dark',
+      el.classList.add((a[0] + '_dark'))
+    ))
   })
-
 }
 
 initSwitch();

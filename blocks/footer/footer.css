@@ -1,0 +1,11 @@
+.footer {
+  background-color: #efefef;
+  border: 2px solid cyan;
+  max-width: 100%;
+  min-height: 424px;
+  display: grid;
+  grid-column: 1fr;
+  grid-template-rows: 1fr, 25px;
+  row-gap: 100px;
+  transition: background-color 0.3s, color 0.3s;
+}

@@ -1,0 +1,8 @@
+.switch_footer {
+  display: flex;
+}
+@media screen and (max-width: 760px) {
+  .switch_footer {
+    display: none;
+  }
+}

@@ -1,0 +1,4 @@
+.page_dark {
+  background-color: #333;
+  transition: background-color 0.3s;
+}
