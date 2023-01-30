@@ -13,6 +13,10 @@
 @import url(../blocks/switch/__button-dark/switch__button-dark.css);
 
 @import url(../blocks/switch/_footer/switch_footer.css);
+@import url(../blocks/switch/__button-light/_dark/switch__button-light_dark.css);
+@import url(../blocks/switch/__button-dark/_dark/switch__button-dark_dark.css);
+@import url(../blocks/switch/__flag-box/_dark/switch__flag-box_dark.css);
+@import url(../blocks/switch/__flag-box/_move/switch__flag-box_move.css);
 
 /* : Ссылки*/
 
@@ -93,22 +97,6 @@
   color: #fff;
   transition: background-color 0.3s, color 0.3s;
 } */
-
-.switch__flag-box_dark {
-  background-color: #676767;
-  transition: background-color 0.3s;
-}
-
-.move {
-  animation: green-button 0.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes green-button {
-  to {
-    background-position: 85% 50%;
-  }
-}
 
 .menu__subblock_open {
   margin-bottom: 40px;

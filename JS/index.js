@@ -1,44 +1,60 @@
-const blocks = document.querySelectorAll('.theme')
-let a = []
-
-
-const switchFlagBox = document.querySelector('.switch__flag-box')
-
 
 function initSwitch() {
-  const buttons = document.querySelector('.switch')
 
-  const lightButton = buttons.querySelector('.switch__button-light')
-  const darkButton = buttons.querySelector('.switch__button-dark')
 
-  lightButton.addEventListener('click', (evt) => {
-    // themes.forEach(elem => elem.classList.remove('dark1'))
-    switchFlagBox.classList.remove('switch__flag-box_dark', 'move')
-    blocks.forEach(el => (
-      a = el.className.split(' '),
-      // a = a[0] + '_dark',
-      el.classList.remove((a[0] + '_dark'))
-    ))
+  function initTransferSwitch() {
+    const transferSwitchToDarkTheme = () => { }
+    const transferSwitchToLightTheme = () => { }
+    return { transferSwitchToDarkTheme, transferSwitchToLightTheme }
+  }
+  const { transferSwitchToDarkTheme, transferSwitchToLightTheme } = initTransferSwitch()
 
-  })
+  const buttons = document.querySelectorAll('.switch')
+  buttons.forEach((el) => {
+    const lightButton = el.querySelector('.switch__button-light')
+    const darkButton = el.querySelector('.switch__button-dark')
+    const flagBox = el.querySelector('.switch__flag-box')
 
-  darkButton.addEventListener('click', (evt) => {
-    // themes.forEach(elem => elem.classList.add('dark1'))*/
-    switchFlagBox.classList.add('switch__flag-box_dark', 'move')
-    blocks.forEach(el => (
-      a = el.className.split(' '),
-      // a = a[0] + '_dark',
-      el.classList.add((a[0] + '_dark'))
-    ))
-  })
+    lightButton.addEventListener('click', (evt) => {
+      flagBox.classList.remove('switch__flag-box_move')
+      turnOffDarkTheme()
+    })
+
+    darkButton.addEventListener('click', (evt) => {
+      flagBox.classList.add('switch__flag-box_move')
+      turnOnDarkTheme()
+    })
+  }
+  )
 }
 
 initSwitch();
 
+function initSwitchingTheme() {
+  const blocks = document.querySelectorAll('.theme')
+  let a = []
+  const turnOnDarkTheme = () => {
+    blocks.forEach(el => (
+      a = el.className.split(' '),
+      el.classList.add((a[0] + '_dark'))
+    ))
+  }
+
+  const turnOffDarkTheme = () => {
+    blocks.forEach(el => (
+      a = el.className.split(' '),
+      el.classList.remove((a[0] + '_dark'))
+    ))
+  }
+
+  return { turnOnDarkTheme, turnOffDarkTheme }
+}
+
+const { turnOnDarkTheme, turnOffDarkTheme } = initSwitchingTheme();
+
 function initMenuButton() {
   const menu = document.querySelector('.menu')
   const menuButton = menu.querySelector('.menu__button')
-  const switcher = menu.querySelector('.switch')
   const subblock = menu.querySelector('.menu__subblock')
 
   const openMenu = () => {
