@@ -1,0 +1,18 @@
+.merckx__image {
+  margin: 120px 0 60px 120px;
+  max-width: 100%;
+  /* max-height: auto; */
+  /* padding-top: 71.8%; */
+  background-image: url(../../../images/image-markes.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@media screen and (max-width: 1100px) {
+  .merckx__image {
+    margin: 60px 18px 0;
+    max-width: 100%;
+    padding-top: 71.8%;
+  }
+}

@@ -1,0 +1,18 @@
+.merckx__sport {
+  padding: 0;
+  margin: 6px 0 0;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: #151515;
+  opacity: 0.7;
+  transition: color 0.3s;
+}
+@media screen and (max-width: 1100px) {
+  .merckx__sport {
+    line-height: 16px;
+    font-size: 10px;
+    color: #222;
+  }
+}
