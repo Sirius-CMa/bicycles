@@ -3,26 +3,31 @@ function initSwitch() {
 
 
   function initTransferSwitch() {
-    const transferSwitchToDarkTheme = () => { }
-    const transferSwitchToLightTheme = () => { }
+    const flagBoxs = document.querySelectorAll('.switch__flag-box')
+
+    const transferSwitchToDarkTheme = () => {
+      flagBoxs.forEach(el => el.classList.add('switch__flag-box_move'))
+    }
+    const transferSwitchToLightTheme = () => {
+      flagBoxs.forEach(el => el.classList.remove('switch__flag-box_move'))
+    }
     return { transferSwitchToDarkTheme, transferSwitchToLightTheme }
-  }
-  const { transferSwitchToDarkTheme, transferSwitchToLightTheme } = initTransferSwitch()
+  };
+  const { transferSwitchToDarkTheme, transferSwitchToLightTheme } = initTransferSwitch();
 
   const buttons = document.querySelectorAll('.switch')
   buttons.forEach((el) => {
     const lightButton = el.querySelector('.switch__button-light')
     const darkButton = el.querySelector('.switch__button-dark')
-    const flagBox = el.querySelector('.switch__flag-box')
 
     lightButton.addEventListener('click', (evt) => {
-      flagBox.classList.remove('switch__flag-box_move')
-      turnOffDarkTheme()
+      turnOffDarkTheme(),
+        transferSwitchToLightTheme()
     })
 
     darkButton.addEventListener('click', (evt) => {
-      flagBox.classList.add('switch__flag-box_move')
-      turnOnDarkTheme()
+      turnOnDarkTheme(),
+        transferSwitchToDarkTheme()
     })
   }
   )
