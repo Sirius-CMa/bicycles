@@ -133,3 +133,6 @@
   margin-bottom: 318px;
   transition: margin-bottom 1s;
 } */
+.center {
+  margin: 0 auto;
+}
