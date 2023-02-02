@@ -1,0 +1,7 @@
+.nav-block__link_training_dark {
+  color: #fff;
+  transition: color 0.3s;
+}
+.nav-block__link_training_dark:hover {
+  opacity: 0.65;
+}

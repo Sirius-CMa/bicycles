@@ -27,6 +27,7 @@
 
 @import url(../blocks/nav-block/__link/_header/nav-block__link_header.css);
 @import url(../blocks/nav-block/_header/nav-block_header.css);
+@import url(../blocks/nav-block/_training/nav-block_training.css);
 
 @import url(../blocks/menu/menu.css);
 @import url(../blocks/menu/__subblock/menu__subblock.css);
@@ -34,6 +35,8 @@
 @import url(../blocks/menu/__navigation/menu__navigation.css);
 @import url(../blocks/menu/__links-block/menu__links-block.css);
 @import url(../blocks/nav-block/__link/_header_dark/nav-block__link_header_dark.css);
+@import url(../blocks/nav-block/__link/_training/nav-block__link_training.css);
+@import url(../blocks/nav-block/__link/_training_dark/nav-block__link_training_dark.css);
 
 /* : Подвал */
 
@@ -56,121 +59,32 @@
 @media screen and (max-width: 760px) {
 
 } */
+/* : Блок Меркс*/
+@import url(../blocks/merckx/merckx.css);
+@import url(../blocks/merckx/__image/merckx__image.css);
+@import url(../blocks/merckx/__description/merckx__description.css);
+@import url(../blocks/merckx/__quote/merckx__quote.css);
+@import url(../blocks/merckx/__name/merckx__name.css);
+@import url(../blocks/merckx/__sport/merckx__sport.css);
 
-.merckx {
-  border: 3px solid blue;
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 80px;
-}
+@import url(../blocks/merckx/__quote/_dark/merckx__quote_dark.css);
+@import url(../blocks/merckx/__name/_dark/merckx__name_dark.css);
+@import url(../blocks/merckx/__sport/_dark/merckx__sport_dark.css);
 
-@media screen and (max-width: 1100px) {
-  .merckx {
-    border: 3px solid cyan;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    row-gap: 40px;
-  }
-}
+/* : Блок training*/
+@import url(../blocks/training/training.css);
+@import url(../blocks/training/__title/training__title.css);
+@import url(../blocks/training/__description/training__description.css);
+@import url(../blocks/training/__image/training__image.css);
 
-.merckx__image {
-  margin: 120px 0 60px 120px;
-  max-width: 100%;
-  /* max-height: auto; */
-  /* padding-top: 71.8%; */
-  background-image: url(../images/image-markes.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
+@import url(../blocks/training/__title/_dark/training__title_dark.css);
+@import url(../blocks/training/__description/_dark/training__description_dark.css);
+/*
 
-@media screen and (max-width: 1100px) {
-  .merckx__image {
-    margin: 60px 18px 0;
-    max-width: 100%;
-    padding-top: 71.8%;
-  }
-}
 
-.merckx__description {
-  margin: 120px 120px 60px 0;
-}
-@media screen and (max-width: 1100px) {
-  .merckx__description {
-    margin: 0 18px 40px;
-  }
-}
 
-.merckx__quote {
-  padding: 0;
-  margin: 0 0 262px;
-  max-width: 470px;
-  line-height: 44px;
-  font-size: 34px;
-  font-weight: 600;
-  color: #151515;
-  letter-spacing: -0.5px;
-  transition: color 0.3s;
-}
-@media screen and (max-width: 1100px) {
-  .merckx__quote {
-    margin-bottom: 40px;
-    line-height: 29px;
-    font-size: 23px;
-  }
-}
+*/
 
-.merckx__quote_dark {
-  color: #fff;
-  transition: color 0.3s;
-}
-
-.merckx__name {
-  padding: 0;
-  margin: 0;
-  line-height: 32px;
-  font-size: 20px;
-  font-weight: 500;
-  font-style: normal;
-  color: #151515;
-  transition: color 0.3s;
-}
-
-@media screen and (max-width: 1100px) {
-  .merckx__name {
-    line-height: 22px;
-    font-size: 14px;
-  }
-}
-.merckx__name_dark {
-  color: #fff;
-  transition: color 0.3s;
-}
-
-.merckx__sport {
-  padding: 0;
-  margin: 6px 0 0;
-  line-height: 28px;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: normal;
-  color: #151515;
-  opacity: 0.7;
-  transition: color 0.3s;
-}
-@media screen and (max-width: 1100px) {
-  .merckx__sport {
-    line-height: 16px;
-    font-size: 10px;
-    color: #222;
-  }
-}
-
-.merckx__sport_dark {
-  color: #e5e5e5;
-  transition: color 0.3s;
-}
 /*
 
 
@@ -181,6 +95,7 @@
 
 .par {
   line-height: 18px;
+  border: 2px solid orchid;
 }
 
 /* .light {
