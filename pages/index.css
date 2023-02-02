@@ -33,6 +33,7 @@
 @import url(../blocks/menu/__button/menu__button.css);
 @import url(../blocks/menu/__navigation/menu__navigation.css);
 @import url(../blocks/menu/__links-block/menu__links-block.css);
+@import url(../blocks/nav-block/__link/_header_dark/nav-block__link_header_dark.css);
 
 /* : Подвал */
 

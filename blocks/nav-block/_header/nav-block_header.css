@@ -1,5 +1,6 @@
 .nav-block_header {
-  margin: 0;
+  order: 2;
+  margin: 28px 120px 28px auto;
   padding: 0;
   max-width: 500px;
   display: flex;
@@ -13,5 +14,9 @@
     align-content: center;
     row-gap: 32px;
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    overflow: hidden;
+    transition: margin-bottom 1s;
   }
 }
