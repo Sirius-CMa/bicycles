@@ -1,0 +1,19 @@
+.nav-block__link_training {
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  color: #151515;
+  transition: color 0.3s;
+}
+
+@media screen and (max-width: 760px) {
+  .nav-block__link_training {
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
+
+.nav-block__link_training:hover {
+  opacity: 0.75;
+}

@@ -1,0 +1,24 @@
+.training__title {
+  border: 1px solid red;
+  /* max-height: 60px; */
+  padding: 0;
+  margin: 150px 0 50px 120px;
+  grid-area: 1/1/2/2;
+  max-width: 460px;
+  line-height: 60px;
+  font-size: 55px;
+  font-weight: 700;
+  font-style: normal;
+  color: #151515;
+  letter-spacing: -0.5px;
+  transition: color 0.3s;
+}
+@media screen and (max-width: 1100px) {
+  .training__title {
+    margin: 80px 18px 40px;
+    grid-area: 1/1/2/2;
+    min-width: 284px;
+    line-height: 40px;
+    font-size: 32px;
+  }
+}

@@ -27,6 +27,7 @@
 
 @import url(../blocks/nav-block/__link/_header/nav-block__link_header.css);
 @import url(../blocks/nav-block/_header/nav-block_header.css);
+@import url(../blocks/nav-block/_training/nav-block_training.css);
 
 @import url(../blocks/menu/menu.css);
 @import url(../blocks/menu/__subblock/menu__subblock.css);
@@ -34,6 +35,8 @@
 @import url(../blocks/menu/__navigation/menu__navigation.css);
 @import url(../blocks/menu/__links-block/menu__links-block.css);
 @import url(../blocks/nav-block/__link/_header_dark/nav-block__link_header_dark.css);
+@import url(../blocks/nav-block/__link/_training/nav-block__link_training.css);
+@import url(../blocks/nav-block/__link/_training_dark/nav-block__link_training_dark.css);
 
 /* : Подвал */
 
@@ -56,7 +59,7 @@
 @media screen and (max-width: 760px) {
 
 } */
-
+/* : Блок Меркс*/
 @import url(../blocks/merckx/merckx.css);
 @import url(../blocks/merckx/__image/merckx__image.css);
 @import url(../blocks/merckx/__description/merckx__description.css);
@@ -67,70 +70,21 @@
 @import url(../blocks/merckx/__quote/_dark/merckx__quote_dark.css);
 @import url(../blocks/merckx/__name/_dark/merckx__name_dark.css);
 @import url(../blocks/merckx/__sport/_dark/merckx__sport_dark.css);
+
+/* : Блок training*/
+@import url(../blocks/training/training.css);
+@import url(../blocks/training/__title/training__title.css);
+@import url(../blocks/training/__description/training__description.css);
+@import url(../blocks/training/__image/training__image.css);
+
+@import url(../blocks/training/__title/_dark/training__title_dark.css);
+@import url(../blocks/training/__description/_dark/training__description_dark.css);
 /*
 
 
 
 */
-.training {
-  max-width: 100%;
-  border: 3px solid hotpink;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* grid-template-rows: repeat(3, minmax(30px, 1fr)); */
-  grid-row: 3;
-  /* column-gap: 160px; */
-  row-gap: 1px;
-}
-.training__title {
-  max-height: 60px;
-  padding: 0;
-  margin: 150px 0 50px 120px;
-  border: 1px solid red;
-  grid-area: 1/1/2/2;
-  max-width: 460px;
-  line-height: 60px;
-  font-size: 55px;
-  font-weight: 700;
-  font-style: normal;
-  color: #151515;
-}
-.training__description {
-  padding: 0;
-  margin: 0 0 0 120px;
-  border: 1px solid red;
-  grid-area: 2/1/3/2;
-  max-width: 460px;
-  line-height: 28px;
-  font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
-  color: #222;
-  opacity: 0.7;
-}
 
-.training__image {
-  grid-area: 1/2/4/3;
-  background-image: url(../images/images_3.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 580px;
-  max-height: 460px;
-  /* height: auto; */
-  margin: 150px 120px 120px 0;
-  border: 2px solid chartreuse;
-}
-.nav-block_training {
-  border: 1px solid red;
-  grid-area: 3/1/4/2;
-  margin: 180px 0 120px 120px;
-  max-height: 30px;
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  max-width: 460px;
-}
 /*
 
 
