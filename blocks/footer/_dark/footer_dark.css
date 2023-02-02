@@ -1,0 +1,5 @@
+.footer_dark {
+  background-color: #2f2f2f;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}

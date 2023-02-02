@@ -1,0 +1,5 @@
+.footer__logo-image_dark {
+  background: url(../../../../images/logo/logo-dark-theme.svg) 50% 50%/ 34px 34px
+    no-repeat;
+  transition: background 0.3s;
+}

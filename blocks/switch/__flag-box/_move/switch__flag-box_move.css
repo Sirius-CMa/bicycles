@@ -1,0 +1,10 @@
+.switch__flag-box_move {
+  animation: green-button 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes green-button {
+  to {
+    background-position: 85% 50%;
+  }
+}
