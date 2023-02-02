@@ -2,12 +2,18 @@
   line-height: 18px;
   font-size: 14px;
   font-weight: 500;
+  font-style: normal;
+  color: #151515;
+  transition: color 0.3s;
 }
 
 @media screen and (max-width: 800px) {
   .nav-block__link_header {
-    /* text-decoration: none; */
     line-height: 18px;
     font-size: 18px;
   }
+}
+
+.nav-block__link_header:hover {
+  opacity: 0.75;
 }
