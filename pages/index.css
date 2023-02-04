@@ -84,8 +84,35 @@
 
 
 */
+.type {
+  border: 3px solid greenyellow;
+  max-width: 100%;
+  display: grid;
+}
+.type__slider {
+}
+.item-1 {
+}
+.type__title {
+  border: 1px solid red;
+}
+.type__description {
+  border: 1px solid red;
+}
+.type__image-1 {
+}
+.type__image-2 {
+}
+.type__block-buttons {
+  border: 1px solid red;
+}
+.type__button {
+}
+.type__button_lefl {
+}
 
 /*
+
 
 
 
