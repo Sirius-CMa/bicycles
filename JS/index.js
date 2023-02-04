@@ -85,3 +85,42 @@ function initMenuButton() {
 
 
 initMenuButton();
+
+
+
+
+function setSliderHandler(selector) {
+  console.log(selector);
+  const sliderContent = document.querySelector(selector);
+  console.log(sliderContent);
+  const sliderContainer = sliderContent.parentElement;
+  console.log(sliderContainer);
+  if (!sliderContainer) {
+    return;
+  }
+
+  const leftBtn = document.querySelector(".type__button_left");
+  const rightBtn = document.querySelector(".type__button_right");
+  const slidersCount =
+    sliderContainer.querySelectorAll(".item").length;
+  let counter = 1;
+  const counterContainer = sliderContainer.querySelector(".about__roll");
+
+  leftBtn.addEventListener("click", () => {
+    sliderContent.scrollLeft -= sliderContainer.offsetWidth;
+  });
+
+  rightBtn.addEventListener("click", () => {
+    sliderContent.scrollLeft += sliderContainer.offsetWidth;
+  });
+}
+
+setSliderHandler(" .slider-box");
+
+
+// function onLoad() {
+
+//   setSlidersHandlers();
+// }
+
+// window.addEventListener("load", onLoad);
