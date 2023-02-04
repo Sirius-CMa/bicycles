@@ -87,26 +87,63 @@
 .type {
   border: 3px solid greenyellow;
   max-width: 100%;
-  display: grid;
 }
 .type__slider {
+  border: 3px solid cyan;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3;
+  column-gap: 20px;
+  margin: 0 0 0 120px;
 }
 .item-1 {
+  /* max-width: 100%; */
 }
+.item-1:hover {
+  /* width: 0;
+  transition: all 1s; */
+}
+
 .type__title {
+  grid-area: 1/1/2/2;
   border: 1px solid red;
 }
 .type__description {
+  grid-area: 2/1/3/2;
   border: 1px solid red;
 }
 .type__image-1 {
+  grid-area: 3/1/4/2;
+  border: 1px solid red;
+  padding: 0;
+  margin: 0 0 0 0px;
+  background-image: url(../images/images-type/type_1.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 650px;
+  padding-bottom: 61.5%;
 }
 .type__image-2 {
+  grid-area: 3/2/4/3;
+  border: 1px solid red;
+  padding: 0;
+  margin: 0;
+  background-image: url(../images/images-type/type_2.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 650px;
+  padding-bottom: 61.5%;
 }
 .type__block-buttons {
   border: 1px solid red;
 }
 .type__button {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin: 20px;
 }
 .type__button_lefl {
 }
