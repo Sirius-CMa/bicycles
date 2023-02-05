@@ -112,16 +112,12 @@
   }
 }
 .slider-box {
-  /* border: 3px solid slateblue; */
   max-width: 100%;
   display: flex;
   flex-wrap: nowrap;
   scroll-behavior: smooth;
   overflow: hidden;
   -ms-overflow-style: none;
-  /* IE and Edge */
-  /* scrollbar-width: none; */
-  /* Firefox */
   overflow-x: hidden;
 }
 .item {
@@ -297,6 +293,115 @@
   background-image: url(../images/images-button/slider_right_dark.svg);
   background-color: #434343;
   transition: all 0.3s;
+}
+
+.type__gradient_way {
+  position: relative;
+  grid-area: 3/1/4/2;
+  width: 100px;
+  height: 40px;
+  background-image: url(../images/images-type/background.svg);
+  background-size: 100px 40px;
+  background-repeat: no-repeat;
+  align-self: end;
+  margin-bottom: 16px;
+}
+.type__gradient_way::before {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  content: "";
+  width: 50px;
+  height: 16px;
+  background: url(../images/images-type/way-highway.svg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+  .type__gradient_way {
+    background-size: 70px 28px;
+    grid-area: 3/1/4/2;
+    width: 70px;
+    height: 28px;
+  }
+  .type__gradient_way::before {
+    background-size: 35px 12px;
+    top: 8px;
+    left: 11px;
+  }
+}
+
+.type__gradient_gravel {
+  position: relative;
+  grid-area: 3/1/4/2;
+  width: 100px;
+  height: 40px;
+  background-image: url(../images/images-type/background.svg);
+  background-size: 100px 40px;
+  background-repeat: no-repeat;
+  align-self: end;
+  margin-bottom: 16px;
+}
+.type__gradient_gravel::before {
+  position: absolute;
+  top: 23px;
+  left: 16px;
+  content: "";
+  width: 50px;
+  height: 10px;
+  background: url(../images/images-type/way-gravel.svg);
+  /* background-size: 50px 5px; */
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+  .type__gradient_gravel {
+    background-size: 70px 28px;
+    grid-area: 3/1/4/2;
+    width: 70px;
+    height: 28px;
+  }
+  .type__gradient_gravel::before {
+    background-size: 35px 12px;
+    top: 12px;
+    left: 11px;
+  }
+}
+
+.type__gradient_tt {
+  position: relative;
+  grid-area: 3/1/4/2;
+  width: 100px;
+  height: 40px;
+  background-image: url(../images/images-type/background.svg);
+  background-size: 100px 40px;
+  background-repeat: no-repeat;
+  align-self: end;
+  margin-bottom: 16px;
+}
+.type__gradient_tt::before {
+  position: absolute;
+  top: 28px;
+  left: 16px;
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: url(../images/images-type/way-tt.svg);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+  .type__gradient_tt {
+    background-size: 70px 28px;
+    grid-area: 3/1/4/2;
+    width: 70px;
+    height: 28px;
+  }
+  .type__gradient_tt::before {
+    background-size: 30px 3px;
+    top: 18px;
+    left: 11px;
+  }
 }
 /*
 
