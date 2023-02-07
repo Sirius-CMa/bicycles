@@ -1,0 +1,17 @@
+.type__image-1 {
+  grid-area: 3/1/4/2;
+  padding: 0;
+  margin: 0 0 0 0px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 650px;
+  padding-bottom: 61.5%;
+}
+@media screen and (max-width: 700px) {
+  .type__image-1 {
+    grid-area: 3/1/4/2;
+    min-width: 284px;
+    /* padding-bottom: 61.5%; */
+  }
+}

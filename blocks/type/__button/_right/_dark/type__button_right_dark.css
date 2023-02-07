@@ -1,0 +1,5 @@
+.type__button_right_dark {
+  background-image: url(../../../../../images/images-button/slider_right_dark.svg);
+  background-color: #434343;
+  transition: all 0.3s;
+}

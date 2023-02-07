@@ -115,7 +115,7 @@ function setSliderHandler(selector) {
   });
 }
 
-setSliderHandler(" .slider-box");
+setSliderHandler(".slider__conteiner");
 
 
 // function onLoad() {
