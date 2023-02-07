@@ -1,0 +1,36 @@
+.type__gradient_gravel {
+  position: relative;
+  grid-area: 3/1/4/2;
+  width: 100px;
+  height: 40px;
+  background-image: url(../../../../images/images-type/background.svg);
+  background-size: 100px 40px;
+  background-repeat: no-repeat;
+  align-self: end;
+  margin-bottom: 16px;
+}
+.type__gradient_gravel::before {
+  position: absolute;
+  top: 23px;
+  left: 16px;
+  content: "";
+  width: 50px;
+  height: 10px;
+  background: url(../../../../images/images-type/way-gravel.svg);
+  /* background-size: 50px 5px; */
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 700px) {
+  .type__gradient_gravel {
+    background-size: 70px 28px;
+    grid-area: 3/1/4/2;
+    width: 70px;
+    height: 28px;
+  }
+  .type__gradient_gravel::before {
+    background-size: 35px 12px;
+    top: 12px;
+    left: 11px;
+  }
+}
