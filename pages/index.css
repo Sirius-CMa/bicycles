@@ -79,6 +79,20 @@
 
 @import url(../blocks/training/__title/_dark/training__title_dark.css);
 @import url(../blocks/training/__description/_dark/training__description_dark.css);
+
+/* : Первый блок */
+
+@import url(../blocks/first-block/first-block.css);
+@import url(../blocks/first-block/__stiky-image/first-block__stiky-image.css);
+@import url(../blocks/first-block/__title/first-block__title.css);
+@import url(../blocks/first-block/__description/first-block__description.css);
+@import url(../blocks/first-block/__button/first-block__button.css);
+@import url(../blocks/first-block/__model-bike/first-block__model-bike.css);
+@import url(../blocks/first-block/__image/first-block__image.css);
+
+@import url(../blocks/first-block/__title/_dark/first-block__title_dark.css);
+@import url(../blocks/first-block/__description/_dark/first-block__description_dark.css);
+
 /*
 
 
@@ -86,6 +100,7 @@
 */
 
 /*
+
 
 
 
@@ -134,5 +149,5 @@
   transition: margin-bottom 1s;
 } */
 .center {
-  margin: 0 auto;
+  margin: 30px auto;
 }

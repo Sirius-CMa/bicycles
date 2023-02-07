@@ -1,0 +1,23 @@
+.first-block__title {
+  border: 1px solid red;
+  grid-area: 1/1/2/2;
+  max-width: 460px;
+  padding: 0;
+  margin: 80px 0 50px 120px;
+  line-height: 60px;
+  font-size: 55px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.5px;
+  color: #151515;
+  transition: color 0.3s;
+}
+@media screen and (max-width: 1100px) {
+  .first-block__title {
+    grid-area: 1/1/2/2;
+    min-width: 284px;
+    margin: 40px 18px;
+    line-height: 40px;
+    font-size: 32px;
+  }
+}
