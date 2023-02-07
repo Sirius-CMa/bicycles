@@ -1,0 +1,4 @@
+.type__button_left {
+  background-image: url(../../../../images/images-button/slider_left.svg);
+  transition: all 0.3s;
+}

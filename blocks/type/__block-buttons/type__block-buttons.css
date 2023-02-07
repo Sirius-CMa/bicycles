@@ -1,0 +1,17 @@
+.type__block-buttons {
+  margin: 50px 0 60px 120px;
+  max-width: 145px;
+}
+
+@media screen and (max-width: 700px) {
+  .type__block-buttons {
+    position: absolute;
+    margin: 0;
+    top: 67px;
+    right: 18px;
+    height: 50px;
+    padding-top: 30px;
+    border: 1px solid red;
+    background-color: #f4f4f4;
+  }
+}

@@ -1,0 +1,9 @@
+.slider__conteiner {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  overflow-x: hidden;
+}

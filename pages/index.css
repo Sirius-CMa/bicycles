@@ -33,7 +33,7 @@
 @import url(../blocks/menu/__subblock/menu__subblock.css);
 @import url(../blocks/menu/__button/menu__button.css);
 @import url(../blocks/menu/__navigation/menu__navigation.css);
-@import url(../blocks/menu/__links-block/menu__links-block.css);
+/* @import url(../blocks/menu/__links-block/menu__links-block.css); */
 @import url(../blocks/nav-block/__link/_header_dark/nav-block__link_header_dark.css);
 @import url(../blocks/nav-block/__link/_training/nav-block__link_training.css);
 @import url(../blocks/nav-block/__link/_training_dark/nav-block__link_training_dark.css);
@@ -47,18 +47,13 @@
 @import url(../blocks/footer/__email/footer__email.css);
 @import url(../blocks/footer/__copy-right/footer__copy-right.css);
 @import url(../blocks/footer/__logo-image/footer__logo-image.css);
-
+/* ! модификаторы тёмной темы */
 @import url(../blocks/footer/_dark/footer_dark.css);
 @import url(../blocks/footer/__email/_dark/footer__email_dark.css);
 @import url(../blocks/footer/__copy-right/_dark/footer__copy-right_dark.css);
 @import url(../blocks/footer/__title/_dark/footer__title_dark.css);
 @import url(../blocks/footer/__logo-image/_dark/footer__logo-image_dark.css);
-/* @media screen and (max-width: 1100px) {
 
-}
-@media screen and (max-width: 760px) {
-
-} */
 /* : Блок Меркс*/
 @import url(../blocks/merckx/merckx.css);
 @import url(../blocks/merckx/__image/merckx__image.css);
@@ -66,7 +61,7 @@
 @import url(../blocks/merckx/__quote/merckx__quote.css);
 @import url(../blocks/merckx/__name/merckx__name.css);
 @import url(../blocks/merckx/__sport/merckx__sport.css);
-
+/* ! модификаторы тёмной темы */
 @import url(../blocks/merckx/__quote/_dark/merckx__quote_dark.css);
 @import url(../blocks/merckx/__name/_dark/merckx__name_dark.css);
 @import url(../blocks/merckx/__sport/_dark/merckx__sport_dark.css);
@@ -76,9 +71,58 @@
 @import url(../blocks/training/__title/training__title.css);
 @import url(../blocks/training/__description/training__description.css);
 @import url(../blocks/training/__image/training__image.css);
-
+/* ! модификаторы тёмной темы */
 @import url(../blocks/training/__title/_dark/training__title_dark.css);
 @import url(../blocks/training/__description/_dark/training__description_dark.css);
+
+/* : Первый блок */
+
+@import url(../blocks/first-block/first-block.css);
+@import url(../blocks/first-block/__stiky-image/first-block__stiky-image.css);
+@import url(../blocks/first-block/__title/first-block__title.css);
+@import url(../blocks/first-block/__description/first-block__description.css);
+@import url(../blocks/first-block/__button/first-block__button.css);
+@import url(../blocks/first-block/__model-bike/first-block__model-bike.css);
+@import url(../blocks/first-block/__image/first-block__image.css);
+
+@import url(../blocks/first-block/__title/_dark/first-block__title_dark.css);
+@import url(../blocks/first-block/__description/_dark/first-block__description_dark.css);
+
+/* : Блок type */
+@import url(../blocks/type/type.css);
+@import url(../blocks/type/__line/type__line.css);
+@import url(../blocks/type/__card/type__card.css);
+@import url(../blocks/type/__title/type__title.css);
+@import url(../blocks/type/__description/type__description.css);
+@import url(../blocks/type/__image-1/type__image-1.css);
+@import url(../blocks/type/__image-2/type__image-2.css);
+@import url(../blocks/type/__gradient/_way/type__gradient_way.css);
+@import url(../blocks/type/__gradient/_gravel/type__gradient_gravel.css);
+@import url(../blocks/type/__gradient/_tt/type__gradient_tt.css);
+@import url(../blocks/type/__block-buttons/type__block-buttons.css);
+@import url(../blocks/type/__button/type__button.css);
+@import url(../blocks/type/__button/_left/type__button_left.css);
+@import url(../blocks/type/__button/_right/type__button_right.css);
+@import url(../blocks/type/__foto/_foto-1/type__foto_foto-1.css);
+@import url(../blocks/type/__foto/_foto-2/type__foto_foto-2.css);
+@import url(../blocks/type/__foto/_foto-3/type__foto_foto-3.css);
+/* ! модификаторы тёмной темы */
+@import url(../blocks/type/__title/_dark/type__title_dark.css);
+@import url(../blocks/type/__description/_dark/type__description_dark.css);
+@import url(../blocks/type/__block-buttons/_dark/type__block-buttons_dark.css);
+@import url(../blocks/type/__button/_left/_dark/type__button_left_dark.css);
+@import url(../blocks/type/__button/_right/_dark/type__button_right_dark.css);
+
+/* : Слайдер */
+@import url(../blocks/slider/slider.css);
+@import url(../blocks/slider/__conteiner/slider__conteiner.css);
+@import url(../blocks/slider/__item/slider__item.css);
+/* @media screen and (max-width: 1100px) {
+
+}
+@media screen and (max-width: 760px) {
+
+} */
 /*
 
 
@@ -86,6 +130,7 @@
 */
 
 /*
+
 
 
 
@@ -122,11 +167,6 @@
 .menu_open {
   height: 600px;
   transition: padding-bottom 1s, height 1s;
-} */
-
-/* .switch_open {
-  margin-bottom: 40px;
-  transition: margin-bottom 0.5s;
 } */
 
 /* .menu__navigation_open {
