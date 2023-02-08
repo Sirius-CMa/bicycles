@@ -123,6 +123,17 @@
 @media screen and (max-width: 760px) {
 
 } */
+.line {
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  .line {
+    display: block;
+    grid-area: 1/1/2/2;
+    border-top: 1px solid #e3e3e3;
+    margin: 40px 18px;
+  }
+}
 .bicycles {
   border: 5px solid skyblue;
   max-width: 100%;
@@ -130,22 +141,70 @@
   grid-template-columns: repeat(2, minmax(1px, 1fr));
   grid-template-rows: 2;
 }
+@media screen and (max-width: 760px) {
+  .bicycles {
+    grid-template-columns: 1fr;
+    grid-template-rows: 4;
+  }
+}
 
 .bicycles__title {
-  grid-area: 1/1/2/2;
   border: 1px solid red;
+  grid-area: 1/1/2/2;
+  margin: 60px 0 0 120px;
+
+  line-height: 60px;
+  font-size: 55px;
+  font-weight: 700;
+  font-style: normal;
+  color: #151515;
+  letter-spacing: -0.5px;
+  transition: color 0.3s;
 }
+@media screen and (max-width: 760px) {
+  .bicycles__title {
+    grid-area: 2/1/3/2;
+    margin: 0 18px 40px;
+    line-height: 40px;
+    font-size: 32px;
+    color: #151515;
+  }
+}
+.bicycles__title_dark {
+  color: #fff;
+  transition: color 0.3s;
+}
+
 .nav-block_bicycles {
-  grid-area: 1/2/2/3;
   border: 3px solid darkorchid;
+  grid-area: 1/2/2/3;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-right: 120px;
+  margin-top: 92px;
+  justify-self: end;
+}
+@media screen and (max-width: 760px) {
+  .nav-block_bicycles {
+    grid-area: 3/1/4/2;
+    border: 3px solid darkorchid;
+    justify-self: start;
+    margin: 0 0 0 18px;
+  }
 }
 .slider_ {
+  margin: 120px 120px 40px;
   grid-area: 2/1/3/3;
+}
+@media screen and (max-width: 760px) {
+  .slider_ {
+    grid-area: 4/1/5/3;
+    margin: 20px 18px 64px;
+  }
 }
 .slider__container_1 {
   border: 3px solid greenyellow;
-  /* overflow: hidden; */
-
   max-width: 100%;
   /* display: flex;
   flex-direction: row;
@@ -232,12 +291,42 @@
 .bicycles__model {
   border: 1px solid red;
   padding: 0;
-  margin: 0;
+  margin: 22px 0 0;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  color: #151515;
+  transition: color 0.3s;
 }
 @media screen and (max-width: 760px) {
   .bicycles__model {
-    display: none;
+    text-align: center;
+    margin-top: 5px;
+    line-height: 18px;
+    font-size: 14px;
+
+    /* display: none; */
   }
+}
+.bicycles__model_dark {
+  color: #fff;
+  transition: color 0.3s;
+}
+.ww {
+  width: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px auto 40px;
+}
+.qq {
+  width: 4px;
+  height: 4px;
+  fill: #cacaca;
+}
+.qq_active {
+  fill: #151515;
 }
 /*
 
