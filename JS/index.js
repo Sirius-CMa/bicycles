@@ -99,6 +99,9 @@ function setSliderHandler(selector) {
     return;
   }
 
+
+
+
   const leftBtn = document.querySelector(".type__button_left");
   const rightBtn = document.querySelector(".type__button_right");
   const slidersCount =
@@ -115,11 +118,55 @@ function setSliderHandler(selector) {
   });
 }
 
-setSliderHandler(".slider__conteiner");
+// setSliderHandler(".slider__conteiner");
+
+
+
+const formTemplate = document.querySelector('#forms').content;
+const box = document.querySelector('.slider__container_1')
+console.log(box);
+
+const creatCard = (name, link, idx) => {
+  const card = formTemplate.querySelector('.bicycles__card').cloneNode(true)
+  const imageCard = card.querySelector('.bicycles__image')
+  const model = card.querySelector('.bicycles__model')
+  model.textContent = name
+  imageCard.src = link
+  imageCard.textContent = name
+  card.classList.add(`bicycles__card_place-${++idx}`)
+  return card
+}
+
+
+
+const createBlockCards = (el) => {
+  const blockCards = formTemplate.querySelector('.bicycles__block-cards').cloneNode(true);
+  console.log(el);
+  el.forEach((el, idx) => blockCards.prepend(creatCard(el.name, el.link, idx)))
+  console.log(blockCards)
+  return blockCards
+}
+
+const addBlockCards = (el) => {
+  box.prepend(createBlockCards(el))
+}
+
+const InitBicyclesCard = () => {
+  cardsBicycles.forEach(el =>
+    addBlockCards(el))
+  box.firstChild.classList.add('bicycles__block-cards_active')
+
+}
+
+
+InitBicyclesCard()
+
+
+
 
 
 // function onLoad() {
-
+//   createCard()
 //   setSlidersHandlers();
 // }
 

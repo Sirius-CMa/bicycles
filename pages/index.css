@@ -278,6 +278,7 @@
 @media screen and (max-width: 760px) {
   .bicycles__card_place-2 {
     grid-area: 1/1/2/2;
+    visibility: hidden;
   }
 }
 .bicycles__card_place-3 {
@@ -286,6 +287,7 @@
 @media screen and (max-width: 760px) {
   .bicycles__card_place-3 {
     grid-area: 1/1/2/2;
+    visibility: hidden;
   }
 }
 .bicycles__model {
