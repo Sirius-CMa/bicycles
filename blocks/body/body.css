@@ -4,4 +4,7 @@
   background-color: gray;
   max-width: 100%;
   margin: 0;
+  --color: #151515;
+  --color-link-bicycles_active: #151515;
+  --color-link-bicycles: #222;
 }

@@ -1,0 +1,15 @@
+.title {
+  line-height: 60px;
+  font-size: 55px;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color);
+  letter-spacing: -0.5px;
+  transition: color 0.3s;
+}
+@media screen and (max-width: 760px) {
+  .title {
+    line-height: 40px;
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,12 @@
+.nav-block__link_bicycles {
+  line-height: 28px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-link-bicycles);
+  opacity: 0.7;
+  transition: color 0.3s;
+}
+.nav-block__link_bicycles:hover {
+  opacity: 0.6;
+}

@@ -34,21 +34,27 @@ function initSwitch() {
 }
 
 initSwitch();
-
+const bodyStyle = document.querySelector('.body')
 function initSwitchingTheme() {
   const blocks = document.querySelectorAll('.theme')
   let a = []
   const turnOnDarkTheme = () => {
     blocks.forEach(el => (
       a = el.className.split(' '),
-      el.classList.add((a[0] + '_dark'))
+      el.classList.add((a[0] + '_dark')),
+      bodyStyle.style.cssText = ('--color: #fff'),
+      bodyStyle.style.setProperty('--color-link-bicycles_active', '#fff'),
+      bodyStyle.style.setProperty('--color-link-bicycles', '#e5e5e5')
     ))
   }
 
   const turnOffDarkTheme = () => {
     blocks.forEach(el => (
       a = el.className.split(' '),
-      el.classList.remove((a[0] + '_dark'))
+      el.classList.remove((a[0] + '_dark')),
+      bodyStyle.style.cssText = ('--color: #151515'),
+      bodyStyle.style.setProperty('--color-link-bicycles_active', '#151515'),
+      bodyStyle.style.setProperty('--color-link-bicycles', '#222')
     ))
   }
 
@@ -124,7 +130,6 @@ function setSliderHandler(selector) {
 
 const formTemplate = document.querySelector('#forms').content;
 const box = document.querySelector('.slider__container_1')
-console.log(box);
 
 const creatCard = (name, link, idx) => {
   const card = formTemplate.querySelector('.bicycles__card').cloneNode(true)
@@ -137,13 +142,11 @@ const creatCard = (name, link, idx) => {
   return card
 }
 
-
-
-const createBlockCards = (el) => {
+const createBlockCards = ([type, ...[data]]) => {
   const blockCards = formTemplate.querySelector('.bicycles__block-cards').cloneNode(true);
-  console.log(el);
-  el.forEach((el, idx) => blockCards.prepend(creatCard(el.name, el.link, idx)))
-  console.log(blockCards)
+  data.forEach((el, idx) =>
+    blockCards.prepend(creatCard(el.name, el.link, idx)))
+  blockCards.id = `target-${type}`
   return blockCards
 }
 
@@ -160,10 +163,40 @@ const InitBicyclesCard = () => {
 
 
 InitBicyclesCard()
+const links = document.querySelectorAll('.nav-block__link_bicycles')
+const blockCards = formTemplate.querySelector('.bicycles__block-cards')
+
+function switchType() {
+  links.forEach(el => el.addEventListener(("click"), (evt) => {
+    evt.preventDefault(),
+      visible(evt)
+  })
+  )
+}
+
+switchType()
 
 
+const bicyclesBlockCards = document.querySelectorAll('.bicycles__block-cards')
+const bicyclesLinks = document.querySelectorAll('.nav-block__link_bicycles')
 
+function visible(evt) {
+  bicyclesBlockCards.forEach(el => {
+    el.id === `target-${evt.target.id}`
+      ? el.classList.add('bicycles__block-cards_active')
+      : el.classList.remove('bicycles__block-cards_active')
+  })
+  bicyclesLinks.forEach(el => {
+    el.id === evt.target.id
+      ? el.classList.add('nav-block__link_bicycles_active')
+      : el.classList.remove('nav-block__link_bicycles_active')
+  })
+}
+// cardsBicycles.forEach(([type, ...[data]]) =>
+// (console.log(type),
+//   console.log(data)
 
+// ))
 
 // function onLoad() {
 //   createCard()
@@ -171,3 +204,4 @@ InitBicyclesCard()
 // }
 
 // window.addEventListener("load", onLoad);
+

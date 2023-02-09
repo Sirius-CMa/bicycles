@@ -1,0 +1,9 @@
+.nav-block__link_bicycles_active {
+  font-weight: 600;
+  color: var(--color-link-bicycles_active);
+  opacity: 1;
+  transition: color 0.3s;
+}
+.nav-block__link_bicycles_active:hover {
+  opacity: 0.75;
+}
