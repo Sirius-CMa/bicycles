@@ -10,8 +10,39 @@
 }
 @media screen and (max-width: 760px) {
   .nav-block_bicycles {
+    border: 1px solid #e3e3e3;
+    border-radius: 2px;
+    padding: 0 12px;
     grid-area: 3/1/4/2;
     justify-self: start;
     margin: 0 0 0 18px;
+    flex-direction: column;
+    gap: 0;
+    width: 100px;
+    max-height: 28px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+  }
+  .nav-block_bicycles::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-image: url(../../../images/images-bicycles/vector_open.svg);
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    top: 10px;
+    right: 12px;
+    z-index: 102;
+    transition: 0.3s;
+  }
+  .nav-block_bicycles:hover {
+    max-height: 90px;
+    transition: 0.3s;
+  }
+  .nav-block_bicycles:hover::before {
+    transform: rotateX(180deg);
+    transition: 0.3s;
   }
 }

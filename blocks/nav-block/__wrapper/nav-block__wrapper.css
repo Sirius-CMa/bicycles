@@ -1,3 +1,4 @@
 .nav-block__wrapper {
   list-style-type: none;
+  transition: 0.3s;
 }

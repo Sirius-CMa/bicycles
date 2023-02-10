@@ -188,8 +188,8 @@ function visible(evt) {
   })
   bicyclesLinks.forEach(el => {
     el.id === evt.target.id
-      ? el.classList.add('nav-block__link_bicycles_active')
-      : el.classList.remove('nav-block__link_bicycles_active')
+      ? (el.classList.add('nav-block__link_bicycles_active'), el.parentElement.classList.add('position'))
+      : (el.classList.remove('nav-block__link_bicycles_active'), el.parentElement.classList.remove('position'))
   })
 }
 // cardsBicycles.forEach(([type, ...[data]]) =>
