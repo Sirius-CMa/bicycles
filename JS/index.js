@@ -157,7 +157,7 @@ const addBlockCards = (el) => {
 const InitBicyclesCard = () => {
   cardsBicycles.forEach(el =>
     addBlockCards(el))
-  box.firstChild.classList.add('bicycles__block-cards_active')
+  box.firstChild.classList.add('bicycles__block-cards_active', 'ddd')
 
 }
 
@@ -192,6 +192,20 @@ function visible(evt) {
       : (el.classList.remove('nav-block__link_bicycles_active'), el.parentElement.classList.remove('position'))
   })
 }
+
+
+const block = document.querySelector('.ddd')
+console.log(block);
+const aa = block.getElementsByClassName('bicycles__card_place-2')[0]
+console.log('1 - ', aa)
+console.log('2 - ', [...block.childNodes].indexOf(aa) + 1)
+// console.log(block.children[0].index('.bicycles__card'))
+
+block.children[0].className.indexOf('3') ? console.log('s') : console.log('dd')
+
+
+
+
 // cardsBicycles.forEach(([type, ...[data]]) =>
 // (console.log(type),
 //   console.log(data)

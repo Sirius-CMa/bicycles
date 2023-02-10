@@ -168,12 +168,13 @@
   grid-template-rows: 1;
 }
 .bicycles__block-cards {
+  border: 1px solid rgb(0, 170, 255);
+  position: relative;
   /* flex-shrink: 0; */
   grid-area: 1/1/2/2;
   padding: 0;
   margin: 0;
   width: 100%;
-  /* border: 1px solid rgb(0, 170, 255); */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
@@ -192,6 +193,48 @@
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s;
+}
+
+/* : стрелки */
+
+.bicycles__icon-navigation_left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  content: "";
+  width: 40px;
+  height: 100%;
+  /* background-color: red; */
+  background-image: url(../images/images-bicycles/arrow-double-start-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: 40px 40px;
+  opacity: 0.1;
+}
+
+.bicycles__icon-navigation_left:hover {
+  opacity: 0.4;
+}
+
+.bicycles__icon-navigation_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  content: "";
+  width: 40px;
+  height: 100%;
+  /* background-color: red; */
+  background-image: url(../images/images-bicycles/arrow-double-end-svgrepo-com.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: 40px 40px;
+  opacity: 0.1;
+}
+
+.bicycles__icon-navigation_right:hover {
+  opacity: 0.4;
 }
 
 .bicycles__card {
