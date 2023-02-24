@@ -43,6 +43,6 @@
   }
   .nav-block_bicycles:hover::before {
     transform: rotateX(180deg);
-    transition: 0.3s;
+    transition: 0З 0.3s;
   }
 }
